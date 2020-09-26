@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Header from "./Header";
 import Items from "../constants/Items";
 import ItemsList from "./ItemsList";
+import Shop from "../assets/shop.png";
 
 const App = () => {
   const [SelectedItems, setSelectedItems] = useState([]);
@@ -40,6 +41,9 @@ const App = () => {
           </div>
         </div>
       </div>
+      <span className="shop-button">
+        <img src={Shop} alt="Start Shopping" />
+      </span>
     </div>
   );
 };

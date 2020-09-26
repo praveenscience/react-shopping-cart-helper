@@ -18,3 +18,7 @@ body {
 .shop-button img {
   width: 35px;
 }
+textarea.form-control {
+  resize: none;
+  height: 75vh;
+}

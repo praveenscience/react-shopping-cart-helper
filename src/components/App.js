@@ -33,6 +33,10 @@ const App = () => {
     e.preventDefault();
     setShopMode(!ShopMode);
   };
+  const handleCopy = e => {
+    e.target.select();
+    document.execCommand("copy");
+  };
   return (
     <div className="App">
       <Header className="Header d-block text-center mb-4" dark={true}>
@@ -42,7 +46,12 @@ const App = () => {
         <div className="row">
           <div className="col-12">
             {ShopMode ? (
-              <textarea className="form-control" value={ShopModeValues} />
+              <textarea
+                readOnly={true}
+                className="form-control"
+                value={ShopModeValues}
+                onClick={handleCopy}
+              />
             ) : (
               <ItemsList
                 Items={Items}

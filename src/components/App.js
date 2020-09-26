@@ -1,9 +1,13 @@
-import React from "react";
+import React, { useState } from "react";
 import Header from "./Header";
 import Items from "../constants/Items";
 import ItemsList from "./ItemsList";
 
 const App = () => {
+  const [SelectedItems, setSelectedItems] = useState([]);
+  const handleSelect = key => {
+    setSelectedItems([...SelectedItems, key]);
+  };
   return (
     <div className="App">
       <Header className="Header d-block text-center mb-4" dark={true}>
@@ -12,7 +16,11 @@ const App = () => {
       <div className="container-fluid">
         <div className="row">
           <div className="col-12">
-            <ItemsList Items={Items} />
+            <ItemsList
+              Items={Items}
+              SelectedItems={SelectedItems}
+              handleSelect={handleSelect}
+            />
           </div>
         </div>
       </div>

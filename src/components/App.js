@@ -6,7 +6,10 @@ import ItemsList from "./ItemsList";
 const App = () => {
   const [SelectedItems, setSelectedItems] = useState([]);
   const handleSelect = key => {
-    setSelectedItems([...SelectedItems, key]);
+    if (SelectedItems.includes(key)) {
+    } else {
+      setSelectedItems([...SelectedItems, key].sort((a, b) => +a - +b));
+    }
   };
   return (
     <div className="App">

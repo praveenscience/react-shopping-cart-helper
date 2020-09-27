@@ -16,17 +16,15 @@ const App = () => {
       // Make a copy of the selected items to not mutate the state.
       let items = [...SelectedItems];
       // Find index at which the element exists.
-      const idx = items.indexOf(key);
-      // If the element is there, then...
-      if (idx > -1) {
-        // Remove the element.
-        items.splice(idx, 1);
-      }
+      const idx = items.indexOf(key)
+      // Remove the element.
+      items.splice(idx, 1);
+      
       // Update the state.
       setSelectedItems(items);
     } else {
       // Add the element at the end and sort the whole array alphabetically and update the state.
-      setSelectedItems([...SelectedItems, key].sort((a, b) => +a - +b));
+      setSelectedItems([...SelectedItems, key];
     }
   };
   const toggleShopMode = e => {

@@ -26,7 +26,7 @@ Hacktoberfest is a monthlong celebration of open source software run by DigitalO
 # Why Should I Contribute?
 It’s not just about the t-shirts or stickers. It's about supporting Open Source Community. It's about celebrating open source by contributing what you are interested in.If you’ve never contributed to open source before, this is the perfect time to get started.
 # What Can I Contribute?
-Look for the projects which interests you,learn how can you contribute to a particular project,fork the repository and submit your PR;
+Look for the projects which interests you,learn how can you contribute to a particular project,fork the repository and submit your PR.
 # Installation For this Project:
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
